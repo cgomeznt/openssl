@@ -87,3 +87,7 @@ Convert PEM to crt.::
 
 	openssl x509 -outform der -in your-private.pem -out your-private.key
 
+Remove password.::
+
+	openssl rsa -in key.pem -out key.pem
+
