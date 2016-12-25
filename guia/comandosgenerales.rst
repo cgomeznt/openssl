@@ -42,6 +42,10 @@ Check a PKCS#12 file (.pfx or .p12).::
 
 	openssl pkcs12 -info -in keyStore.p12
 
+Check a certificate.::
+
+	openssl x509 -in aaa_cert.pem -noout -text
+
 Debugging Using OpenSSL
 ++++++++++++++++++++++++++++
 
