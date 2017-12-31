@@ -1,0 +1,16 @@
+Recuerda el password lo puedes ver en domain.xml
+
+keytool -list -v -keystore portalappclusprd.jks
+
+
+
+
+
+openssl x509 -in keytool_crt.pem -inform pem -noout -text
+
+openssl x509 -in Ldapclusprd.crt -noout -text
+
+
+
+[root@srv-vccs-ldap-01]:/etc/openldap/certs>openssl x509 -in Ldapclusprd.crt -noout -enddate
+notAfter=Oct 31 14:54:02 2018 GMT
