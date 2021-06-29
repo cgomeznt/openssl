@@ -11,9 +11,10 @@ Crear certificados autofirmados
 
 	openssl genrsa -des3 -out rootCA.key 4096
 
-**Creamos un certificado Root autofirmado**::
+**Creamos un certificado Root autofirmado**. Poner atención cuando le consulten <Common Name (e.g. server FQDN or YOUR name)> aqui se debe especificar el nombre correcto del servidor a nivel de DNS o el nombre que se utilizara en los archivos HOSTS::
 
 	openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.crt
+
 
 **Creamos un certificado por cada servidor - Creamos el certificado key**::
 
